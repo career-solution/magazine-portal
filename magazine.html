@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPS Academy Group of Educational Institutes | Official Website</title>
+
+<style>
+:root {
+    --primary: #d32f2f;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f0f2f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white; /* changed to white */
+    text-align: center;
+    padding: 8px 10px; /* smaller area */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar img {
+    max-width: 160px; /* smaller logo */
+    width: 100%;
+    height: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(211,47,47,0.95), rgba(211,47,47,0.95));
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 2rem;
+}
+
+/* MAGAZINE GRID */
+.magazine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 8% 60px;
+}
+
+/* CARD */
+.issue-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-bottom: 5px solid var(--primary);
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.issue-card:hover {
+    transform: translateY(-6px);
+}
+
+.vol-tag {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.issue-card h3 {
+    margin-top: 10px;
+}
+
+.btn-access {
+    display: block;
+    margin-top: 18px;
+    padding: 12px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-access:hover {
+    background: #b71c1c;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: var(--dark);
+    color: white;
+}
+
+/* ========================= */
+/* MOBILE OPTIMIZATION */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 1.3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        margin: 30px 0 20px;
+        font-size: 1.3rem;
+    }
+
+    .magazine-grid {
+        padding: 0 20px 40px;
+        gap: 20px;
+    }
+
+    .issue-card {
+        padding: 20px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <img src="images/logo.png" alt="IPS Academy Logo">
+</div>
+
+<div class="hero">
+    <h1>Official Digital Magazine Portal</h1>
+    <p>Empowering Students Through Knowledge & Innovation</p>
+</div>
+
+<h2 class="section-title" id="magazine">Latest Magazine Releases</h2>
+
+<div class="magazine-grid">
+
+    <div class="issue-card">
+        <span class="vol-tag">Vol XXI | Issue 01</span>
+        <h3>January 2026 Edition</h3>
+        <p>Vedic Mathematics, Chemistry Board Strategies & Tech Analysis.</p>
+        <a href="https://drive.google.com/file/d/1vzIMNH-754Dzc8H0JizZbktUqkXN7KKL/preview" target="_blank" class="btn-access">
+            Read January Edition
+        </a>
+    </div>
+
+    <div class="issue-card">
+        <span class="vol-tag">Vol XXI | Issue 02</span>
+        <h3>February 2026 Edition</h3>
+        <p>Physics Prep, Aviation Analysis & Advanced Maths Concepts.</p>
+        <a href="https://drive.google.com/file/d/1tGEGqU6r5Ft3QavR6XNxUopQzmE1Men7/preview" target="_blank" class="btn-access">
+            Read February Edition
+        </a>
+    </div>
+
+</div>
+
+<footer>
+© 2026 IPS Academy Group of Educational Institutes| All Rights Reserved
+</footer>
+
+</body>
+</html>
