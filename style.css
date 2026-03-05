@@ -1,0 +1,149 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.header p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Magazine Section */
+.magazine-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* Card */
+.magazine-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.magazine-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Cover Image */
+.magazine-cover {
+    width: 350px;
+    object-fit: cover;
+}
+
+/* Content */
+.magazine-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.magazine-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.magazine-content p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.view-btn {
+    background: #00c6ff;
+    color: #000;
+}
+
+.view-btn:hover {
+    background: #00a2d3;
+}
+
+.download-btn {
+    background: #ff9800;
+    color: #000;
+}
+
+.download-btn:hover {
+    background: #e68900;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .magazine-card {
+        flex-direction: column;
+    }
+
+    .magazine-cover {
+        width: 100%;
+    }
+
+    .magazine-content {
+        padding: 25px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
